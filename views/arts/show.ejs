@@ -1,9 +1,17 @@
-<div class="columns">
-  <% data.forEach(film => { %>
+<div class="container">
+  <div class="columns">
     <div class="column">
-      <h2><%= art.artname %></h2>
-      <h4><%= art.artst %></h4>
-      <img src="<%= art.image %>" />
+      <figure class="image">
+        <img src="<%= art.image %>" alt="<%= art.artname %>">
+      </figure>
     </div>
-  <% }) %>
+    <div class="column">
+      <h3 class="title"><%= art.artname %></h3>
+      <h4 class="subtitle"><%= art.artist %></h4>
+      <div class="icon is-small">
+        <i class="fa fa-pencil"></i>
+      </div>
+      <p><%= art.notes %></p>
+    </div>
+  </div>
 </div>
