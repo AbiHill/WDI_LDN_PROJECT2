@@ -1,0 +1,37 @@
+<div class="container">
+  <form method="POST" action="/arts">
+    <div class="field">
+      <label class="label secondary-font is-size-6">Artist</label>
+      <select name="artist" class="select secondary-font is-size-6">
+        <option selected disabled>Please choose</option>
+        <% data[2].forEach(artist => { %>
+          <option value="<%= artist._id %>"><%= artist.name %></option>
+        <% }) %>
+      </select>
+    </div>
+    <div class="field">
+      <label class="label secondary-font is-size-6">City</label>
+      <select name="city" class="select secondary-font is-size-6">
+        <option selected disabled>Please choose</option>
+        <% data[1].forEach(city => { %>
+          <option value="<%= city._id %>"><%= city.name %></option>
+        <% }) %>
+      </select>
+    </div>
+    <div class="field">
+      <label class="label secondary-font is-size-6">Image</label>
+      <div class="control">
+        <input class="input secondary-font is-size-6" name="image" type="text" placeholder="Image" required required pattern="^http">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label secondary-font is-size-6">Description</label>
+      <div class="control">
+        <textarea class="textarea secondary-font is-size-6" name="description" placeholder="Add your description (380 chars max)" maxlength="380"></textarea>
+      </div>
+    </div>
+    <div class="control">
+      <button class="button is-primary secondary-font">Submit</button>
+    </div>
+  </form>
+</div>

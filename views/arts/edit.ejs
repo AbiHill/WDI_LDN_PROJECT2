@@ -1,0 +1,40 @@
+<div class="container">
+  <form method="POST" action="/arts/<%= data[0]._id %>">
+    <input type="hidden" name="_method" value="PUT">
+    <div class="field">
+      <label class="label">Artist</label>
+      <div class="control">
+        <select name="artist">
+          <option selected disabled>Please choose</option>
+          <% data[2].forEach(artist => { %>
+            <option value="<%= artist._id %>"><%= artist.name %></option>
+          <% }) %>
+        </select>
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">City</label>
+      <select name="city">
+        <option selected disabled>Please choose</option>
+        <% data[1].forEach(city => { %>
+          <option value="<%= city._id %>"><%= city.name %></option>
+        <% }) %>
+      </select>
+    </div>
+    <div class="field">
+      <label class="label">Image</label>
+      <div class="control">
+        <input class="input" name="image" type="text" placeholder="Image" required required pattern="^http" value="<%= data[0].image %>">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Description</label>
+      <div class="control">
+        <textarea class="textarea" name="description" placeholder="Add your description (380 chars max)" maxlength="380"><%= data[0].description %></textarea>
+      </div>
+    </div>
+    <div class="control">
+      <button class="button is-primary">Submit</button>
+    </div>
+  </form>
+</div>

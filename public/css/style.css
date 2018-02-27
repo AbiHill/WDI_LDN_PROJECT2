@@ -4,7 +4,20 @@
   background-size: cover;
 }
 
-.hero.homepage {
-  background-image: url(https://culturalnovayork.files.wordpress.com/2015/07/grafiti_kobra_highline_cover.jpg);
-  background-size: cover;
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 60px;
+  font-weight: lighter;
+  
+}
+
+.secondary-font {
+  font-family: 'Graduate', cursive;
+  font-size: 40px;
+}
+
+
+.title {
+  font-size: 100px!important;
+  font-weight: normal!important;
 }

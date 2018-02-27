@@ -6,6 +6,7 @@
   "author": "AbiHill <abihill8@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "bcrypt": "^1.0.3",
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.2",
     "ejs": "^2.5.7",

@@ -1,17 +1,36 @@
 <main class="container">
+  <h3>Filter</h3>
+  <form>
+    <select class="control" name="city">
+      <option>All</option>
+      <% cities.forEach(city => { %>
+        <option value="<%= city._id %>"<% if(city._id.equals(selectedCity)) {%> selected<% } %>><%= city.name %></option>
+      <% }) %>
+    </select>
+    <select class="control" name="artist">
+      <option>All</option>
+      <% artists.forEach(artist => { %>
+        <option value="<%= artist._id %>"<% if(artist._id.equals(selectedArtist)) {%> selected<% } %>><%= artist.name %></option>
+      <% }) %>
+    </select>
+
+    <button class="button is-primary">GO</button>
+  </form>
+  <h1 class="is-size-2 has-text-centered">Street Art Collection</h1>
   <div class="columns is-multiline">
+
     <% arts.forEach(art => { %>
     <div class="column is-one-quarter-desktop is-half-tablet">
       <a href="/arts/<%= art._id %>">
-      <div class="card">
+
         <div class="card-image">
           <figure class="image">
             <img src="<%= art.image %>" alt="<%= art.name %>">
           </figure>
-        </div>
+
         <div class="card-content">
-          <h3 class="title"><%= art.artname %></h3>
-          <h4 class="subtitle"><%= art.notes %></h4>
+          <h2 class="subtitle"><%= art.artist.name %></h2>
+          <h3 class="subtitle"><%= art.city.name %></h3>
         </div>
       </div>
       </a>
