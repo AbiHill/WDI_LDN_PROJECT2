@@ -2,22 +2,62 @@
 .hero.homepage {
   background-image: url(https://culturalnovayork.files.wordpress.com/2015/07/grafiti_kobra_highline_cover.jpg);
   background-size: cover;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  z-index: -1;
+}
+
+.navbar {
+  background-color: transparent!important;
 }
 
 h1 {
   font-family: 'Permanent Marker', cursive;
   font-size: 60px;
   font-weight: lighter;
-  
+
 }
 
 .secondary-font {
   font-family: 'Graduate', cursive;
-  font-size: 40px;
 }
 
+.paragraph-font {
+  font-family: 'Slabo 27px', serif;
+}
 
-.title {
-  font-size: 100px!important;
-  font-weight: normal!important;
+.margin-top-bottom-ten {
+  margin: 10px 0px;
+}
+
+.margin-ten {
+  margin: 10px;
+}
+
+.inline {
+  display: inline;
+}
+
+.float-right {
+  float: right;
+}
+
+.display-block {
+  display: block!important;
+}
+
+.width-onehundred-percent {
+  width: 100%;
+}
+
+.tagmate-button {
+  margin: 10px 10px 10px 0px;
+  padding: 6px 25px;
+  color: #fff!important;
+  background-color: black!important;
+  font-family: 'Graduate', cursive;
+  font-size: 15px;
+  border: none;
 }

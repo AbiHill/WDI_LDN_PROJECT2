@@ -1,66 +1,97 @@
 <div class="container">
   <div class="columns">
     <div class="column">
-      <figure class="image">
-        <img src="<%= art.image %>" alt="<%= art.artname %>">
-      </figure>
-    </div>
-    <div class="column">
-      <h1 class="subtitle is-size-3 has-text-left"><%= art.artist.name %></h1>
-      <h4 class="is-size-5 secondary-font"><%= art.city.name %></h4>
-      <h4 class="subtitle">Snappers Notes:</h4>
-      <p> <span class="paragraph"><%= art.description %></span></p>
+      <section class="section">
+        <h1 class="subtitle is-size-3 is-marginless"><%= art.artist.name %></h1>
+        <h4 class=" subtitle is-size-5 secondary-font"><%= art.city.name %></h4>
+        <figure class="image">
+          <img src="<%= art.image %>" alt="<%= art.artname %>">
+        </figure>
 
+        <div class="margin-top-bottom-ten">
+          <h4 class="subtitle secondary-font is-marginless">Snappers Notes:</h4>
+          <p> <span class="paragraph paragraph-font is-size-6"><%= art.description %></span></p>
+        </div>
 
-
-      <% if(locals.isAuthenticated) { %>
-        <% if(art.isOwnedBy(locals.currentUser)) { %>
-          <a href="/arts/<%= art._id %>/edit" class="button is-primary">Edit</a>
-
-          <form method="POST" action="/arts/<%= art._id %>">
-            <input type="hidden" name="_method" value="DELETE">
-            <button class="button is-danger">Delete</button>
-          </form>
-        <% } %>
-        <hr />
-
-        <ul class="comments">
-          <% art.comments.forEach(comment => { %>
-            <li>
-            <div class="box">
-            <% if(comment.isOwnedBy(locals.currentUser)) { %>
-              <form class="delete" method="POST" action="/arts/<%= art._id %>/comments/<%= comment._id %>">
+          <% if(locals.isAuthenticated) { %>
+            <% if(art.isOwnedBy(locals.currentUser)) { %>
+              <a href="/arts/<%= art._id %>/edit" class="tagmate-button margin-top-bottom-ten">Edit
+                <span class="icon is-small">
+                    <i class="fa fa-edit"></i>
+                </span>
+              </a>
+              <form class="inline" method="POST" action="/arts/<%= art._id %>">
                 <input type="hidden" name="_method" value="DELETE">
-                <button class="delete">x</button>
+                <button class="tagmate-button  margin-ten">Delete
+                  <span class="icon is-small">
+                        <i class="fa fa-times"></i>
+                  </span>
+                </button>
               </form>
-              <% } %>
-              <article class="media">
-                <div class="media-left">
-                  <figure class="image is-64x64">
-                    <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <%= comment.content %>
-                    </p>
-                    <% if(comment.user) { %>
-                      <strong><%= comment.user.username %></strong>
-                    <% } %>
-                  </div>
-                </div>
-              </article>
-              </div>
-            </li>
-          <% }) %>
-        </ul>
+            <% } %>
 
-        <form method="POST" action="/arts/<%= art._id %>/comments">
-        <textarea class="textarea" name="content"></textarea>
-        <button class="button is-primary">Submit</button>
-        </form>
+            <div class="dropdown is-hoverable display-block">
+              <div class="dropdown-trigger">
+                <button class="button width-onehundred-percent" aria-haspopup="true" aria-controls="dropdown-menu4">
+                  <span>See All Comments</span>
+                  <span class="icon is-small">
+                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+            <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <ul class="comments ">
+                    <% art.comments.forEach(comment => { %>
+                      <li>
+                        <div class="box">
+                          <% if(comment.isOwnedBy(locals.currentUser)) { %>
+                              <form class="delete float-right" method="POST" action="/arts/<%= art._id %>/comments/<%= comment._id %>">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button class="delete is-right">x</button>
+                              </form>
+                          <% } %>
+                          <article class="media">
+                            <div class="media-left">
+                              <figure class="image is-64x64">
+                                <img src="<%= comment.user.userimage %>" alt="Image">
+                              </figure>
+                            </div>
+                            <div class="media-content">
+                              <div class="content">
+                                <p>
+                                  <%= comment.content %>
+                                </p>
+                                <% if(comment.user) { %>
+                                  <strong><%= comment.user.username %></strong>
+                                <% } %>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                      </li>
+                  <% }) %>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="margin-top-bottom-ten">
+          <h3 class="subtitle secondary-font is-marginless">Add Comment</h3>
+          <form class="margin-top-bottom-ten" method="POST" action="/arts/<%= art._id %>/comments">
+            <textarea class="textarea" name="content"></textarea>
+            <button class="tagmate-button is-primary margin-top-bottom-ten">Submit
+              <span class="icon is-small">
+                <i class="fa fa-check"></i>
+              </span>
+            </button>
+          </form>
+
+      </div>
+
       <% } %>
-    </div>
+      </section>
   </div>
 </div>

@@ -4,7 +4,10 @@ const Artist = require('../models/artist');
 const Promise = require('bluebird');
 
 function indexRoute(req, res) {
-  if(req.query.city === 'All') req.query = {};
+  console.log(req.query);
+  if(req.query.city === 'All') req.query = { artist: req.query.artist };
+  if(req.query.artist === 'All') req.query = { city: req.query.city };
+  if(req.query.artist === 'All' && req.query.city === 'All') req.query = {};
 
   Promise.props({
     cities: City.find().sort({ name: 1 }).exec(),

@@ -64,6 +64,48 @@ mongoose.connect('mongodb://localhost/art-database', (err, db) => {
       image: 'https://i.imgur.com/VQhE8of.jpg',
       description: 'This is a great piece by Space Invader. It\'s located in Brick Lane and is huge',
       user: user
+    }, {
+      artist: artists[5],
+      city: cities[2],
+      image: 'https://i.imgur.com/pTui0ga.jpg',
+      description: 'This is a great piece by Space Invader. It\'s located in Brick Lane and is huge',
+      user: user
+    }, {
+      artist: artists[0],
+      city: cities[2],
+      image: 'https://i.imgur.com/Eq1pnFc.jpg',
+      description: 'This is a great piece by Space Invader. It\'s located in Brick Lane and is huge',
+      user: user
+    }, {
+      artist: artists[5],
+      city: cities[2],
+      image: 'https://i.imgur.com/bH9NtsV.jpg',
+      description: 'This is a great piece by Space Invader. It\'s located in Brick Lane and is huge',
+      user: user
+    }, {
+      artist: artists[6],
+      city: cities[2],
+      image: 'https://i.imgur.com/Nkv8ahd.jpg',
+      description: 'This is a great piece by Space Invader. It\'s located in Brick Lane and is huge',
+      user: user
+    }, {
+      artist: artists[6],
+      city: cities[2],
+      image: 'https://i.imgur.com/2uVHoYa.jpg',
+      description: 'This is a great piece by Space Invader. It\'s located in Brick Lane and is huge',
+      user: user
+    }, {
+      artist: artists[3],
+      city: cities[2],
+      image: 'https://i.imgur.com/pNvV4Sn.jpg',
+      description: 'This is a great piece by Space Invader. It\'s located in Brick Lane and is huge',
+      user: user
+    }, {
+      artist: artists[6],
+      city: cities[2],
+      image: 'https://i.imgur.com/ievyNsV.jpg',
+      description: 'This is a great piece by Space Invader. It\'s located in Brick Lane and is huge',
+      user: user
     }]))
     .then(arts => console.log(`${arts.length} arts created`))
     .catch(err => console.log(err))

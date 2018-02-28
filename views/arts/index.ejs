@@ -1,22 +1,45 @@
 <main class="container">
-  <h3>Filter</h3>
-  <form>
-    <select class="control" name="city">
-      <option>All</option>
-      <% cities.forEach(city => { %>
-        <option value="<%= city._id %>"<% if(city._id.equals(selectedCity)) {%> selected<% } %>><%= city.name %></option>
-      <% }) %>
-    </select>
-    <select class="control" name="artist">
-      <option>All</option>
-      <% artists.forEach(artist => { %>
-        <option value="<%= artist._id %>"<% if(artist._id.equals(selectedArtist)) {%> selected<% } %>><%= artist.name %></option>
-      <% }) %>
-    </select>
+  <div class="section">
+    <div class="dropdown is-hoverable">
+      <div class="dropdown-trigger">
+        <button class="tagmate-button " aria-haspopup="true" aria-controls="dropdown-menu4">
+          <span class="secondary-font is-size-6">Filter Street Art</span>
+          <span class="icon is-small">
+            <i class="fa fa-arrow-down"></i>
+          </span>
+        </button>
+      </div>
+      <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+        <div class="dropdown-content">
+          <div class="dropdown-item">
+            <form>
+              <label>By Location</label>
+              <select class="control dropdown-item secondary-font"name="city">
+                <option class="secondary-font">All</option>
+                <% cities.forEach(city => { %>
+                  <option value="<%= city._id %>"<% if(city._id.equals(selectedCity)) {%> selected<% } %>><%= city.name %></option>
+                <% }) %>
+              </select>
+              <label>By Artist</label>
+              <select class="control dropdown-item secondary-font $gap: 32px" name="artist">
+                <option class="secondary-font">All</option>
+                <% artists.forEach(artist => { %>
+                  <option value="<%= artist._id %>"<% if(artist._id.equals(selectedArtist)) {%> selected<% } %>><%= artist.name %></option>
+                <% }) %>
+              </select>
 
-    <button class="button is-primary">GO</button>
-  </form>
-  <h1 class="is-size-2 has-text-centered">Street Art Collection</h1>
+              <button class="tagmate-button">GO
+              <span class="icon is-small">
+                  <i class="fa fa-filter"></i>
+              </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+</div>
+</div>
+  <h1 class="title is-2 is-spaced has-text-centered ">Street Art Collection</h1>
   <div class="columns is-multiline">
 
     <% arts.forEach(art => { %>
@@ -28,10 +51,7 @@
             <img src="<%= art.image %>" alt="<%= art.name %>">
           </figure>
 
-        <div class="card-content">
-          <h2 class="subtitle"><%= art.artist.name %></h2>
-          <h3 class="subtitle"><%= art.city.name %></h3>
-        </div>
+
       </div>
       </a>
     </div>
