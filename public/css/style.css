@@ -61,3 +61,7 @@ h1 {
   font-size: 15px;
   border: none;
 }
+
+#edit-img:hover img {
+    -webkit-filter: invert(100%);
+}

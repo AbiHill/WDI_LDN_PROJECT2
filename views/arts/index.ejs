@@ -1,5 +1,6 @@
 <main class="container">
-  <div class="section">
+    <h1 class="title is-2 is-spaced has-text-centered ">Street Art Collection</h1>
+
     <div class="dropdown is-hoverable">
       <div class="dropdown-trigger">
         <button class="tagmate-button " aria-haspopup="true" aria-controls="dropdown-menu4">
@@ -38,8 +39,8 @@
         </div>
       </div>
 </div>
-</div>
-  <h1 class="title is-2 is-spaced has-text-centered ">Street Art Collection</h1>
+
+
   <div class="columns is-multiline">
 
     <% arts.forEach(art => { %>
@@ -48,9 +49,10 @@
 
         <div class="card-image">
           <figure class="image">
+          <span id="edit-img">
             <img src="<%= art.image %>" alt="<%= art.name %>">
+            </span>
           </figure>
-
 
       </div>
       </a>

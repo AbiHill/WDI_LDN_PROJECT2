@@ -50,43 +50,43 @@ mongoose.connect('mongodb://localhost/art-database', (err, db) => {
       artist: artists[4],
       city: cities[0],
       image: 'https://i.imgur.com/nwqfsvl.jpg',
-      description: 'This is a great piece by Space Invader. It\'s located in Brick Lane and is huge',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user
     }, {
       artist: artists[4],
       city: cities[1],
       image: 'https://i.imgur.com/DNGcpTh.jpg',
-      description: 'This is a great piece by Space Invader. It\'s located in Brick Lane and is huge',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user
     }, {
       artist: artists[3],
       city: cities[2],
       image: 'https://i.imgur.com/VQhE8of.jpg',
-      description: 'This is a great piece by Space Invader. It\'s located in Brick Lane and is huge',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user
     }, {
       artist: artists[5],
       city: cities[2],
       image: 'https://i.imgur.com/pTui0ga.jpg',
-      description: 'This is a great piece by Space Invader. It\'s located in Brick Lane and is huge',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user
     }, {
       artist: artists[0],
       city: cities[2],
       image: 'https://i.imgur.com/Eq1pnFc.jpg',
-      description: 'This is a great piece by Space Invader. It\'s located in Brick Lane and is huge',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user
     }, {
       artist: artists[5],
       city: cities[2],
       image: 'https://i.imgur.com/bH9NtsV.jpg',
-      description: 'This is a great piece by Space Invader. It\'s located in Brick Lane and is huge',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user
     }, {
       artist: artists[6],
       city: cities[2],
       image: 'https://i.imgur.com/Nkv8ahd.jpg',
-      description: 'This is a great piece by Space Invader. It\'s located in Brick Lane and is huge',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user
     }, {
       artist: artists[6],
@@ -98,13 +98,13 @@ mongoose.connect('mongodb://localhost/art-database', (err, db) => {
       artist: artists[3],
       city: cities[2],
       image: 'https://i.imgur.com/pNvV4Sn.jpg',
-      description: 'This is a great piece by Space Invader. It\'s located in Brick Lane and is huge',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user
     }, {
       artist: artists[6],
       city: cities[2],
       image: 'https://i.imgur.com/ievyNsV.jpg',
-      description: 'This is a great piece by Space Invader. It\'s located in Brick Lane and is huge',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user
     }]))
     .then(arts => console.log(`${arts.length} arts created`))
