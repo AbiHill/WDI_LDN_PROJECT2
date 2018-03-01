@@ -10,7 +10,7 @@ const Artist = require('../models/artist');
 let cities = [];
 let artists = [];
 
-mongoose.connect(process.emv.MONGODB_URI || 'mongodb://localhost/art-database', (err, db) => {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database', (err, db) => {
   db.dropDatabase();
   City.create([
     { name: 'London'},
