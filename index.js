@@ -13,10 +13,11 @@ const router = require('./config/router');
 
 // create our express app
 const app = express();
-const PORT = 8000;
+//this is the port numer 8000 when building but we change this to heroku port 
+const PORT = process.env.PORT || 8000;
 
 // connect to our database
-mongoose.connect('mongodb://localhost/art-database');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database');
 
 // set up our view engine
 app.set('view engine', 'ejs');

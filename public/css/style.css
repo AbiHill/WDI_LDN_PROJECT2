@@ -13,6 +13,10 @@
   background-color: transparent!important;
 }
 
+.home-nav .navbar-item {
+  color: white;
+}
+
 h1 {
   font-family: 'Permanent Marker', cursive;
   font-size: 60px;
@@ -21,11 +25,11 @@ h1 {
 }
 
 .secondary-font {
-  font-family: 'Graduate', cursive;
+  font-family: 'BioRhyme', serif;
 }
 
 .paragraph-font {
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Cabin', sans-serif;
 }
 
 .margin-top-bottom-ten {
@@ -70,4 +74,16 @@ h1 {
   width: 100%;
   height: 500px;
   background-color: grey;
+}
+.footer {
+  background-color: white;
+  position: fixed;
+  margin: 0;
+  width:100%;
+  bottom: 0;
+  font-size: 12px;
+  Slabo 27px', serif;
+}
+a {
+  color: grey;
 }

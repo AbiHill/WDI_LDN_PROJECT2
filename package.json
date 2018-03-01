@@ -5,6 +5,9 @@
   "repository": "git@github.com:AbiHill/WDI_LDN_PROJECT2.git",
   "author": "AbiHill <abihill8@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node index"
+  },
   "dependencies": {
     "bcrypt": "^1.0.3",
     "bluebird": "^3.5.1",

@@ -5,7 +5,9 @@ const sessions = require('../controllers/sessions');
 const secureRoute = require('../lib/secureRoute');
 
 // set up our request handlers
-router.get('/', (req, res) => res.render('pages/home'));
+// Nic with top nav - ever time you go to homepage isHomepage =  true
+// Then we wrote javascript on _navbar.ejs
+router.get('/', (req, res) => res.render('pages/home', { isHomepage: true }));
 
 router.route('/arts/new')
   .get(secureRoute, arts.new);
