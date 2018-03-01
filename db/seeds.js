@@ -51,97 +51,130 @@ mongoose.connect('mongodb://localhost/art-database', (err, db) => {
       city: cities[0],
       image: 'https://i.imgur.com/nwqfsvl.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      user: user
+      user: user,
+      lat: 50.829374,
+      long: -0.137091
+
     }, {
       artist: artists[4],
       city: cities[1],
       image: 'https://i.imgur.com/DNGcpTh.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      user: user
+      user: user,
+      lat: 50.829374,
+      long: -0.137091
     }, {
       artist: artists[3],
       city: cities[2],
       image: 'https://i.imgur.com/VQhE8of.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      user: user
+      user: user,
+      lat: 50.829374,
+      long: -0.137091
     }, {
       artist: artists[5],
       city: cities[3],
       image: 'https://i.imgur.com/pTui0ga.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      user: user
+      user: user,
+      lat: 50.829374,
+      long: -0.137091
     }, {
       artist: artists[1],
       city: cities[4],
       image: 'https://i.imgur.com/Eq1pnFc.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      user: user
+      user: user,
+      lat: 50.829374,
+      long: -0.137091
     }, {
       artist: artists[5],
       city: cities[8],
       image: 'https://i.imgur.com/bH9NtsV.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      user: user
+      user: user,
+      lat: 50.829374,
+      long: -0.137091
     }, {
       artist: artists[6],
       city: cities[10],
       image: 'https://i.imgur.com/Nkv8ahd.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      user: user
+      user: user,
+      lat: 50.829374,
+      long: -0.137091
     }, {
       artist: artists[6],
       city: cities[5],
       image: 'https://i.imgur.com/2uVHoYa.jpg',
       description: 'This is a great piece by Space Invader. It\'s located in Brick Lane and is huge',
-      user: user
+      user: user,
+      lat: 50.829374,
+      long: -0.137091
     }, {
       artist: artists[3],
       city: cities[1],
       image: 'https://i.imgur.com/pNvV4Sn.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      user: user
+      user: user,
+      lat: 50.829374,
+      long: -0.137091
     }, {
       artist: artists[0],
       city: cities[0],
       image: 'https://i.imgur.com/eEXBfV4.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      user: user
+      user: user,
+      lat: 50.829374,
+      long: -0.137091
     }, {
       artist: artists[2],
       city: cities[3],
       image: 'https://i.imgur.com/GtUNq5w.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      user: user
+      user: user,
+      lat: 50.829374,
+      long: -0.137091
     }, {
       artist: artists[3],
       city: cities[9],
       image: 'https://i.imgur.com/8AU8PVp.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      user: user
+      user: user,
+      lat: 50.829374,
+      long: -0.137091
     }, {
       artist: artists[4],
       city: cities[6],
       image: 'https://i.imgur.com/C2rwieQ.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      user: user
+      user: user,
+      lat: 50.829374,
+      long: -0.137091
     }, {
       artist: artists[5],
       city: cities[7],
       image: 'https://i.imgur.com/rxsvtDQ.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      user: user
+      user: user,
+      lat: 50.829374,
+      long: -0.137091
     }, {
       artist: artists[6],
       city: cities[9],
       image: 'https://i.imgur.com/Rj9Cjeu.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      user: user
+      user: user,
+      lat: 50.829374,
+      long: -0.137091
     }, {
       artist: artists[1],
       city: cities[13],
       image: 'https://i.imgur.com/V70lcpy.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      user: user
+      user: user,
+      lat: 50.829374,
+      long: -0.137091
     }]))
     .then(arts => console.log(`${arts.length} arts created`))
     .catch(err => console.log(err))

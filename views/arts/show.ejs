@@ -9,9 +9,13 @@
         </figure>
 
         <div class="margin-top-bottom-ten">
-          <h4 class="subtitle secondary-font is-marginless">Snappers Notes:</h4>
+          <h4 class="subtitle secondary-font">Snappers Notes:</h4>
           <p> <span class="paragraph paragraph-font is-size-6"><%= art.description %></span></p>
         </div>
+        <h4 class="subtitle secondary-font">Location:</h4>
+        <div id="map" data-lat="<%= art.lat %>" data-long="<%= art.long %>">
+        </div>
+
 
           <% if(locals.isAuthenticated) { %>
             <% if(art.isOwnedBy(locals.currentUser)) { %>

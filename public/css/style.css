@@ -65,3 +65,9 @@ h1 {
 #edit-img:hover img {
     -webkit-filter: invert(100%);
 }
+
+#map {
+  width: 100%;
+  height: 500px;
+  background-color: grey;
+}
