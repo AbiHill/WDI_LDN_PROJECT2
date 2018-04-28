@@ -4,7 +4,7 @@
 
 I've always been a big fan of art and specifically street art, so for my second project I decided to create an app for users to share street art which is called Tag-Mate. Tag-Mate allows users to share art that they've spotted but also use the website as a directory of what street art is out there and in what cities.
 
- Tag-Mate is a full-stack, RESTful Express app built using Node.js, MongoDB, JavaScript, EJS, and SCSS.
+ Tag-Mate is a full-stack, RESTful Express app built using Node.js, MongoDB, JavaScript, EJS and SCSS.
 
 ##### [View website here](https://tag-mate.herokuapp.com/)
 
