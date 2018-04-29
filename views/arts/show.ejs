@@ -13,10 +13,8 @@
           <p> <span class="paragraph paragraph-font is-size-6"><%= art.description %></span></p>
         </div>
         <h4 class="subtitle secondary-font">Location:</h4>
-        <div id="map" data-lat="<%= art.lat %>" data-long="<%= art.long %>">
-        </div>
-
-
+        <div id="map" data-lat="<%= art.lat %>" data-long="<%= art.long %>"></div>
+        <%= art.lat %> <%= art.long %>
           <% if(locals.isAuthenticated) { %>
             <% if(art.isOwnedBy(locals.currentUser)) { %>
               <a href="/arts/<%= art._id %>/edit" class="tagmate-button margin-top-bottom-ten">Edit

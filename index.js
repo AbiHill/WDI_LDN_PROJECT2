@@ -13,7 +13,7 @@ const router = require('./config/router');
 
 // create our express app
 const app = express();
-//this is the port numer 8000 when building but we change this to heroku port 
+//this is the port number 8000 when building but we change this to heroku port 
 const PORT = process.env.PORT || 8000;
 
 // connect to our database

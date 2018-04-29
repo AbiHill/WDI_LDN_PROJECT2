@@ -1,8 +1,8 @@
 /* global google */
 function initMap() {
   // const venue = { lat: 50.829049, lng: -0.139494 };
-  const venue = { 'lat': parseInt($('#map')[0].dataset.lat), 'lng': parseInt($('#map')[0].dataset.long) };
-
+  const venue = { 'lat': parseFloat($('#map')[0].dataset.lat, 10), 'lng': parseFloat($('#map')[0].dataset.long, 10) };
+  console.log(venue);
   //google maps display
   const map = new google.maps.Map($('#map')[0], {
     zoom: 14,
