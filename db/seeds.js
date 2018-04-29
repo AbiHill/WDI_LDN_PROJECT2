@@ -53,7 +53,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database', 
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user,
       lat: 50.829374,
-      lng: -0.137091
+      long: -0.137091
 
     }, {
       artist: artists[4],
@@ -62,7 +62,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database', 
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user,
       lat: 50.8225,
-      lng: -0.168749
+      long: 0.1372
     }, {
       artist: artists[3],
       city: cities[2],
@@ -70,7 +70,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database', 
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user,
       lat: 50.829374,
-      lng: -0.137091
+      long: -0.137091
     }, {
       artist: artists[5],
       city: cities[3],
@@ -78,7 +78,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database', 
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user,
       lat: 50.829374,
-      lng: -0.137091
+      long: -0.137091
     }, {
       artist: artists[1],
       city: cities[4],
@@ -86,7 +86,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database', 
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user,
       lat: 50.829374,
-      lng: -0.137091
+      long: -0.137091
     }, {
       artist: artists[0],
       city: cities[1],
@@ -94,7 +94,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database', 
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user,
       lat: 50.829374,
-      lng: -0.137091
+      long: -0.137091
     }, {
       artist: artists[6],
       city: cities[10],
@@ -102,7 +102,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database', 
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user,
       lat: 50.829374,
-      lng: -0.137091
+      long: -0.137091
     }, {
       artist: artists[6],
       city: cities[5],
@@ -110,7 +110,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database', 
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user,
       lat: 50.829374,
-      lng: -0.137091
+      long: -0.137091
     }, {
       artist: artists[3],
       city: cities[1],
@@ -118,7 +118,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database', 
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user,
       lat: 50.829374,
-      lng: -0.137091
+      long: -0.137091
     }, {
       artist: artists[0],
       city: cities[0],
@@ -126,7 +126,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database', 
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user,
       lat: 50.829374,
-      lng: -0.137091
+      long: -0.137091
     }, {
       artist: artists[2],
       city: cities[3],
@@ -134,7 +134,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database', 
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user,
       lat: 50.829374,
-      lng: -0.137091
+      long: -0.137091
     }, {
       artist: artists[3],
       city: cities[9],
@@ -142,7 +142,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database', 
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user,
       lat: 50.829374,
-      lng: -0.137091
+      long: -0.137091
     }, {
       artist: artists[4],
       city: cities[6],
@@ -150,7 +150,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database', 
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user,
       lat: 50.829374,
-      lng: -0.137091
+      long: -0.137091
     }, {
       artist: artists[5],
       city: cities[7],
@@ -158,7 +158,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database', 
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user,
       lat: 50.829374,
-      lng: -0.137091
+      long: -0.137091
     }, {
       artist: artists[6],
       city: cities[9],
@@ -166,7 +166,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database', 
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user,
       lat: 50.829374,
-      lng: -0.137091
+      long: -0.137091
     }, {
       artist: artists[1],
       city: cities[13],
@@ -174,7 +174,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database', 
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user,
       lat: 50.829374,
-      lng: -0.137091
+      long: -0.137091
     }]))
     .then(arts => console.log(`${arts.length} arts created`))
     .catch(err => console.log(err))

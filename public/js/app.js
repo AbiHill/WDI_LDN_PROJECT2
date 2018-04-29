@@ -1,15 +1,15 @@
 /* global google */
 function initMap() {
   // const venue = { lat: 50.829049, lng: -0.139494 };
-  const art = { 'lat': parseInt($('#map')[0].dataset.lat), 'lng': parseInt($('#map')[0].dataset.lng) };
+  const venue = { 'lat': parseInt($('#map')[0].dataset.lat), 'lng': parseInt($('#map')[0].dataset.long) };
 
   //google maps display
   const map = new google.maps.Map($('#map')[0], {
     zoom: 14,
-    center: art
+    center: venue
   });
   new google.maps.Marker({
-    position: art,
+    position: venue,
     map: map
   });
 }
