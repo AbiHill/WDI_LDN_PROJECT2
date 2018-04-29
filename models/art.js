@@ -18,7 +18,7 @@ const schema = new mongoose.Schema({
   city: { type: mongoose.Schema.ObjectId, ref: 'City'},
   user: { type: mongoose.Schema.ObjectId, ref: 'User' },
   lat: { type: Number },
-  long: { type: Number }
+  lng: { type: Number }
 });
 
 schema.methods.isOwnedBy = function(user) {
