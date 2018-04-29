@@ -4,7 +4,7 @@ function initMap() {
   const venue = { 'lat': parseInt($('#map')[0].dataset.lat), 'lng': parseInt($('#map')[0].dataset.long) };
 
   const map = new google.maps.Map($('#map')[0], {
-    zoom: 5,
+    zoom: 14,
     center: venue
   });
   new google.maps.Marker({

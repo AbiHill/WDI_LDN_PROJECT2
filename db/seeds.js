@@ -61,8 +61,8 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database', 
       image: 'https://i.imgur.com/DNGcpTh.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user,
-      lat: 50.829374,
-      long: -0.137091
+      lat: 50.8225,
+      long: -0.168749
     }, {
       artist: artists[3],
       city: cities[2],
@@ -88,8 +88,8 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database', 
       lat: 50.829374,
       long: -0.137091
     }, {
-      artist: artists[5],
-      city: cities[8],
+      artist: artists[0],
+      city: cities[1],
       image: 'https://i.imgur.com/bH9NtsV.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user,
@@ -107,7 +107,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/art-database', 
       artist: artists[6],
       city: cities[5],
       image: 'https://i.imgur.com/2uVHoYa.jpg',
-      description: 'This is a great piece by Space Invader. It\'s located in Brick Lane and is huge',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       user: user,
       lat: 50.829374,
       long: -0.137091

@@ -1,12 +1,15 @@
+//setting variables for the models
 const Art = require('../models/art');
 const City = require('../models/city');
 const Artist = require('../models/artist');
+//promise library
 const Promise = require('bluebird');
 
 function indexRoute(req, res) {
-  console.log(req.query);
+  //the below sets up the filtering
   if(req.query.city === 'All') req.query = { artist: req.query.artist };
   if(req.query.artist === 'All') req.query = { city: req.query.city };
+  //the below sets the filtering back to an empty object if the user selects al for bother filters
   if(req.query.artist === 'All' && req.query.city === 'All') req.query = {};
 
   Promise.props({
@@ -45,20 +48,18 @@ function newRoute(req, res) {
       res.render('arts/new', { data });
     })
     .catch(err => console.error(err)); // inject the data into the view
-
-  // City.find()
-  //   .then(cities => res.render('arts/new', { cities }));
-  // .then(Artist.find()
-  // .then(artists => res.render('arts/new', {artists}))
-  // how do I get artists and cities in this god damn function?? Ask George..
 }
 
 
 function showRoute(req, res, next) {
+  //find the art by it's id
   Art.findById(req.params.id)
+  //populate the user comments via the virtual
     .populate('city user comments.user artist')// load in the whole category record
     .then(art => {
+      //if the art does not exist then return/render a 404 page
       if(!art) return res.render('pages/404');
+      //esle show the art
       res.render('arts/show', { art });
     })
     .catch(next);
@@ -67,7 +68,6 @@ function showRoute(req, res, next) {
 
 function editRoute(req, res) {
   // get both art and categories in parallel
-
   const promiseArray = [
     Art.findById(req.params.id).populate('artist'),
     City.find(),
