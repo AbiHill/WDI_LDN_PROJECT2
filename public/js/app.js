@@ -1,3 +1,5 @@
+//-------------------------GOOGLE MAPS FUNCTION ----------------
+
 /* global google */
 function initMap() {
   // const venue = { lat: 50.829049, lng: -0.139494 };
